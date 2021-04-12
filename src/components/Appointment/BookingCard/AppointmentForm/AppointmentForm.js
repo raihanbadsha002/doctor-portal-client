@@ -24,7 +24,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
         data.date = date;
         data.created = new Date();
         
-        fetch('http://localhost:8089/addAppointment', {
+        fetch('https://sleepy-caverns-69462.herokuapp.com/addAppointment', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)
